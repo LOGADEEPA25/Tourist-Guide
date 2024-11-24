@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav .nav-links {
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+
+nav .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+}
+
+nav .nav-links li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.about, .contact {
+    background-color: #f4f4f4;
+}
+
+.about-content, .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p, .contact p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+    </style>
+</head>
+<body>
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>Have any questions or need more information? Feel free to reach out!</p>
+
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

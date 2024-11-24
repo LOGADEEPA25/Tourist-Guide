@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Our Tourist Place</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Explore <span>LD Travels</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to the Best Tourist Destination</h2>
+            <p>Discover new adventures and unforgettable experiences</p>
+            <a href="home.html" class="btn">Explore</a>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Travel Packages</h3>
+                <p>Customized travel experiences to beautiful destinations around the world.</p>
+            </div>
+            <div class="service-card">
+                <h3>Guided Tours</h3>
+                <p>Explore cities and natural wonders with expert local guides.</p>
+            </div>
+            <div class="service-card">
+                <h3>Accommodation</h3>
+                <p>Book hotels, resorts, and homestays to suit your budget and preferences.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Explore Paradise. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
